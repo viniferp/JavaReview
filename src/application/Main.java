@@ -1,26 +1,104 @@
 package application;
 
+import java.io.FileNotFoundException;
+
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
+			
 		
 		
+		/***
+		 * Stream pipeline example
+		 */
+		
+//		String path = "products.txt";
+//		path = path.replace("\\", "/");
+//		File myFile = new File(path);
+//		Scanner sc = new Scanner(myFile);
+//		List<Product> pList = new ArrayList<>();
+//		
+//		while(sc.hasNextLine()) {
+//			String[] pSplit = sc.nextLine().split(",");
+//			String name = pSplit[0];
+//			double price = Double.parseDouble(pSplit[1]);
+//			
+//			Product p = new Product(name, price);
+//			pList.add(p);
+//		}
+//		double avg = pList.stream().mapToDouble(Product::getPrice).average().getAsDouble();
+//		
+//		Comparator<String> comp = (s1, s2) -> s1.toUpperCase().compareTo(s2.toUpperCase());  
+//		
+//		System.out.println("Average price: " + String.format("%.2f", avg));
+//		List<String> orderedProductList = pList.stream()
+//												.filter(p -> p.getPrice() < avg)
+//												.map(p -> p.getName())
+//												.sorted(comp.reversed())
+//												.collect(Collectors.toList()) ;
+//		
+//		System.out.println(orderedProductList.toString());
+//		
+//		sc.close();
 		
 		
+		//System.out.println(list.stream().max());
+		//System.out.println(list.stream().map(x -> x * 10).collect(Collectors.toList()));
 		
 		
+//		Stream<Long> st = Stream.iterate(new Long[] {0L, 1L}, p -> new Long[] {p[1], p[0] + p[1]}).map(p -> p[0]);
+//		System.out.println(Arrays.toString(st.limit(10).toArray()));
 		
+		/***
+		 * Streams review pt1
+		 */
+//		List<Product> list = new ArrayList<Product>();	
+//		list.add(new Product("Tv", 900.00));
+//		list.add(new Product("Mouse", 50.00));
+//		list.add(new Product("Tablet", 350.50));
+//		list.add(new Product("Hd", 80.90));
+//		
+//		//return sum of products that the name starts with 'T';
+//		double sumProducts = list.stream().filter((p) -> p.getName().charAt(0) == 'T').mapToDouble(p -> p.getPrice()).sum();
+//		System.out.println("Sum: " + sumProducts);
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		/***
+		 * Hash Review
+		 */
+//		Set<Integer> alunosA = new HashSet<Integer>();
+//		Set<Integer> alunosB = new HashSet<Integer>();
+//		Set<Integer> alunosC = new HashSet<Integer>();
+//		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("How many students for course A:");
+//		int numberA = sc.nextInt();
+//		
+//		for(int i = 0; i < numberA; i++) {
+//			alunosA.add(sc.nextInt());
+//		}
+//		
+//		System.out.println("How many students for course B:");
+//		int numberB = sc.nextInt();
+//		
+//		for(int i = 0; i < numberB; i++) {
+//			alunosB.add(sc.nextInt());
+//		}
+//		
+//		System.out.println("How many students for course C:");
+//		int numberC = sc.nextInt();
+//		
+//		for(int i = 0; i < numberC; i++) {
+//			alunosC.add(sc.nextInt());
+//		}
+//		
+//		Set<Integer> total = new HashSet<Integer>(alunosA);
+//		total.addAll(alunosB);
+//		total.addAll(alunosC);
+//		
+//		System.out.println("Total Students: " +  total.size());
+//		
+//		sc.close();
+//				
 /***
  * Generics Review ex1
  * 		
