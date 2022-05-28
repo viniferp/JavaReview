@@ -5,8 +5,44 @@ import java.io.FileNotFoundException;
 public class Main {
 
 	public static void main(String[] args) throws FileNotFoundException {
-			
 		
+		
+		
+		
+		/**
+		 * Stream fixation exercise
+		 */
+//		
+//		String path = "employeesList.txt";
+//		path = path.replace("\\", "/");
+//		File file = new File(path);
+//		Scanner sc = new Scanner(file);
+//		List<Employee> empList = new ArrayList<>();
+//		
+//		while(sc.hasNextLine()) {
+//			String[] e = sc.nextLine().split(",");
+//			empList.add(new Employee(e[0], e[1], Double.parseDouble(e[2])));
+//		}
+//		
+//		Scanner sc2 = new Scanner(System.in);
+//		sc2.useLocale(Locale.ENGLISH);
+//		System.out.println("Enter salary: ");
+//		Double baseSalary =	sc2.nextDouble();
+//		sc2.close();
+//		
+//		System.out.println("\nEmail of people whose salary is more than " + String.format("%.2f", baseSalary) + ":");
+//		System.out.println(empList.stream()
+//									.filter(e -> e.getSalary() > baseSalary)
+//									.map(e -> e.getEmail())
+//									.collect(Collectors.toList()));
+//		
+//		double sumSalary = empList.stream()
+//									.filter(e -> (e.getName().toUpperCase()).charAt(0) == 'M')
+//									.map(e -> e.getSalary())
+//									.reduce(0d, (x, y) -> x + y);
+//		
+//		System.out.println("Sum of salary of people whose name starts with 'M': " + sumSalary);
+//		sc.close();
 		
 		/***
 		 * Stream pipeline example
